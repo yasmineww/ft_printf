@@ -31,8 +31,6 @@ static void	ft_helper(const char *format, int *size, va_list ap)
 		ft_printhex(va_arg(ap, unsigned int), size);
 	else if (*format == 'X')
 		ft_printhexup(va_arg(ap, unsigned int), size);
-	else if (*format == '%')
-		ft_putchar(va_arg(ap, int), size);
 	else
 		ft_putchar(*format, size);
 }
@@ -49,20 +47,28 @@ int	ft_printf(const char *format, ...)
 	while (*format)
 	{
 		if (*format == '%')
-			ft_helper(++format, &size, ap);
+		{
+			format++;
+			if (!*format)
+				break ;
+			ft_helper(format, &size, ap);
+		}
 		else
 		{
 			write(1, format, 1);
 			size++;
 		}
 		format++;
-		if (*format == '%' && *(++format) == '\0')
-			break ;
 	}
 	va_end(ap);
 	return (size);
 }
-int main (void)
-{
-	ft_printf(" %p", 212);
-}
+// int main (void)
+// {
+// 	//printf("hey%");
+// 	write(1, "\n", 1);
+// 	ft_printf("hey%");
+// }
+
+// if (*format == '%' && *(++format) == '\0')
+		// 	break ;

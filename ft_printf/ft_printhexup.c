@@ -1,32 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_unsigned.c                                      :+:      :+:    :+:   */
+/*   ft_printhexup.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ymakhlou <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/22 17:28:47 by ymakhlou          #+#    #+#             */
-/*   Updated: 2023/11/22 17:28:49 by ymakhlou         ###   ########.fr       */
+/*   Created: 2023/11/21 23:02:37 by ymakhlou          #+#    #+#             */
+/*   Updated: 2023/11/21 23:02:50 by ymakhlou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-void	ft_unsigned(unsigned int n, int *size)//!!!!!!!!
+void	ft_printhexup(unsigned int n, int *size)
 {
-	if (n > 9)
+	char	*str;
+
+	str = "0123456789ABCDEF";
+	if (n >= 16)
 	{
-		ft_unsigned((n / 10), size);
-		ft_unsigned((n % 10), size);
+		ft_printhexup((n / 16), size);
+		ft_printhexup((n % 16), size);
 	}
-	else
+	else if (n < 16)
 	{
-		ft_putchar((n + '0'), size);
+		ft_putchar(str[n], size);
 	}
 }
 // int main (void)
 // {
 // 	int size = 5;
-// 	//ft_putstr(-123, &size);
-// 	printf("%s",NULL);
+// 	ft_printhexup(123, &size);
 // }
