@@ -6,7 +6,7 @@
 /*   By: ymakhlou <ymakhlou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/21 17:12:10 by ymakhlou          #+#    #+#             */
-/*   Updated: 2023/11/23 00:36:06 by ymakhlou         ###   ########.fr       */
+/*   Updated: 2023/11/25 21:23:19 by ymakhlou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,12 +63,3 @@ int	ft_printf(const char *format, ...)
 	va_end(ap);
 	return (size);
 }
-// int main (void)
-// {
-// 	//printf("hey%");
-// 	write(1, "\n", 1);
-// 	ft_printf("hey%");
-// }
-
-// if (*format == '%' && *(++format) == '\0')
-		// 	break ;

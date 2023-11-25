@@ -6,7 +6,7 @@
 /*   By: ymakhlou <ymakhlou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/21 17:13:08 by ymakhlou          #+#    #+#             */
-/*   Updated: 2023/11/21 18:38:36 by ymakhlou         ###   ########.fr       */
+/*   Updated: 2023/11/25 21:22:41 by ymakhlou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,10 +34,3 @@ void	ft_putnbr(int n, int *size)
 		ft_putchar((n + '0'), size);
 	}
 }
-
-// int main (void)
-// {
-// 	int size = 5;
-// 	ft_putnbr(-123, &size);
-// 	//printf("%d",-123);
-// }

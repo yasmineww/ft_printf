@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printhex.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ymakhlou <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: ymakhlou <ymakhlou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/21 23:02:17 by ymakhlou          #+#    #+#             */
-/*   Updated: 2023/11/21 23:02:21 by ymakhlou         ###   ########.fr       */
+/*   Updated: 2023/11/25 21:23:05 by ymakhlou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,8 +27,3 @@ void	ft_printhex(unsigned int n, int *size)
 		ft_putchar(str[n], size);
 	}
 }
-/*int main (void)
-{
-	int size = 0;
-	ft_printhex(-1, &size);
-}*/

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_unsigned.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ymakhlou <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: ymakhlou <ymakhlou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/22 17:28:47 by ymakhlou          #+#    #+#             */
-/*   Updated: 2023/11/22 17:28:49 by ymakhlou         ###   ########.fr       */
+/*   Updated: 2023/11/25 21:22:19 by ymakhlou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,9 +24,3 @@ void	ft_unsigned(unsigned int n, int *size)
 		ft_putchar((n + '0'), size);
 	}
 }
-// int main (void)
-// {
-// 	int size = 5;
-// 	//ft_putstr(-123, &size);
-// 	printf("%s",NULL);
-// }

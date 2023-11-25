@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printhexup.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ymakhlou <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: ymakhlou <ymakhlou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/21 23:02:37 by ymakhlou          #+#    #+#             */
-/*   Updated: 2023/11/21 23:02:50 by ymakhlou         ###   ########.fr       */
+/*   Updated: 2023/11/25 21:23:00 by ymakhlou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,8 +27,3 @@ void	ft_printhexup(unsigned int n, int *size)
 		ft_putchar(str[n], size);
 	}
 }
-// int main (void)
-// {
-// 	int size = 5;
-// 	ft_printhexup(123, &size);
-// }
