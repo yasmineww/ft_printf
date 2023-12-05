@@ -6,7 +6,7 @@
 /*   By: ymakhlou <ymakhlou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/21 17:12:10 by ymakhlou          #+#    #+#             */
-/*   Updated: 2023/11/25 21:23:19 by ymakhlou         ###   ########.fr       */
+/*   Updated: 2023/12/05 12:56:02 by ymakhlou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ static void	ft_helper(const char *format, int *size, va_list ap)
 	if (*format == 'd' || *format == 'i')
 		ft_putnbr(va_arg(ap, int), size);
 	else if (*format == 'c')
-		ft_putchar(va_arg(ap, int), size);//int instead of char why
+		ft_putchar(va_arg(ap, int), size);
 	else if (*format == 's')
 		ft_putstr(va_arg(ap, char *), size);
 	else if (*format == 'p')
